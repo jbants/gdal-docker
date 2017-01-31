@@ -24,7 +24,7 @@ WORKDIR /data
 VOLUME ["/data"]
 
 # Execute the gdal utilities as nobody, not root
-USER nobody
+USER james
 
 # Output version and capabilities by default.
 CMD gdalinfo --version && gdalinfo --formats && ogrinfo --formats
